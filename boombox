@@ -1,0 +1,17 @@
+local players = game:GetService("Players")
+local plrs = players:GetPlayers()
+
+while true do
+    for i, a in pairs (plrs) do
+        if a.Name ~= "Ninjo_V2" then
+
+        else
+            local poo = Instance.new("Part", game.Workspace)
+            poo.Position = a.Character.Torso.Position
+            poo.BrickColor = BrickColor.new("Brown")
+            poo.Shape = Enum.PartType.Ball
+            poo.Material = Enum.Material.Grass
+        end
+    end
+    wait(1)
+end
